@@ -1048,29 +1048,24 @@ footer {
 
 
 .pause {
+    margin-top: 10px;
     margin-left: 20px;
     position: relative;
-    background: black;
+    background-image: linear-gradient(to right, black 0%, black 35%, #6a6a6a00 35%, #6a6a6a00 65%, black 65%, black 100%);
     height: 40px;
     width: 40px;
     z-index: 2;
     cursor: pointer;
 }
 
-.pause::before {
-    content: '';
-    position: absolute;
-    height: 41px;
-    background: white;
-    left: 12px;
-    width: 15px;
-}
+
 
 .pause:hover {
-    background: var(--red);
+    background-image: linear-gradient(to right, var(--red) 0%, var(--red) 35%, #6a6a6a00 35%, #6a6a6a00 65%, var(--red) 65%, var(--red) 100%);
 }
 
 .play {
+    margin-top: 10px;
     margin-left: 20px;
     width: 0;
     height: 0;
