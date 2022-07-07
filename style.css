@@ -1224,7 +1224,12 @@ footer {
 
     .floating {
         margin-inline: 6%;
-        animation-name: none;
+        animation-play-state: paused;
+    }
+
+    .play,
+    .pause {
+        display: none;
     }
 
     .bullets li {
