@@ -1036,6 +1036,9 @@ footer {
     background-color: #4267B2;
 }
 
+.animation-control>* {
+    margin-left: auto;
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -1179,8 +1182,10 @@ footer {
         overflow-x: hidden;
     }
 
+
     .floating {
         margin-inline: 6%;
+        animation-name: none;
     }
 
     .bullets li {
