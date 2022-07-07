@@ -587,7 +587,12 @@ span.bullet-line::before {
     z-index: 2;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    animation-play-state: running;
     animation-name: bounce;
+}
+
+.stop-animation {
+    animation-play-state: paused;
 }
 
 .bounce {
@@ -1036,7 +1041,44 @@ footer {
     background-color: #4267B2;
 }
 
+.animation-control {
+    background: transparent;
+    margin-left: auto;
+}
 
+
+.pause {
+    margin-top: 10px;
+    margin-left: 20px;
+    position: relative;
+    background-image: linear-gradient(to right, black 0%, black 35%, #6a6a6a00 35%, #6a6a6a00 65%, black 65%, black 100%);
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+
+.pause:hover {
+    background-image: linear-gradient(to right, var(--red) 0%, var(--red) 35%, #6a6a6a00 35%, #6a6a6a00 65%, var(--red) 65%, var(--red) 100%);
+}
+
+.play {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid black;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    cursor: pointer;
+}
+
+.play:hover {
+    border-left-color: var(--red);
+
+}
 
 @media only screen and (max-width: 1200px) {
 
@@ -1179,8 +1221,10 @@ footer {
         overflow-x: hidden;
     }
 
+
     .floating {
         margin-inline: 6%;
+        animation-name: none;
     }
 
     .bullets li {
