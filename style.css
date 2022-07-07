@@ -587,7 +587,12 @@ span.bullet-line::before {
     z-index: 2;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    animation-play-state: running;
     animation-name: bounce;
+}
+
+.stop-animation {
+    animation-play-state: paused;
 }
 
 .bounce {
