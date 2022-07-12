@@ -225,9 +225,24 @@ button:hover {
 
 
 
-body {
+body,
+bgcolor {
     background: #FDFDFD;
 }
+
+link,
+alink,
+vlink {
+    color: #0000EE;
+}
+
+
+
+text {
+    color: black;
+}
+
+
 
 input {
     background: white;
@@ -706,7 +721,8 @@ span.bullet-line::before {
 
 
 .container-octagon-two {
-    background-image: linear-gradient(170deg, #949494 0%, #575757 80%);
+    background-color: #949494;
+    background-image: linear-gradient(170deg, #949494 0%, #6c6c6c 80%);
     color: #ffffff;
     padding-bottom: 1rem;
     grid-template-areas: "image info";
@@ -1060,6 +1076,9 @@ footer {
 }
 
 
+.octagon-two-con>.pause {
+    background-image: linear-gradient(to right, white 0%, white 35%, #6a6a6a00 35%, #6a6a6a00 65%, white 65%, white 100%);
+}
 
 .pause:hover {
     background-image: linear-gradient(to right, var(--red) 0%, var(--red) 35%, #6a6a6a00 35%, #6a6a6a00 65%, var(--red) 65%, var(--red) 100%);
@@ -1074,6 +1093,10 @@ footer {
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     cursor: pointer;
+}
+
+.octagon-two-con>.play {
+    border-left-color: white;
 }
 
 .play:hover {
