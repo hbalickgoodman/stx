@@ -29,5 +29,9 @@ function ShiftSearchText() {
 
 
 function ShiftBack() {
-    document.querySelector("#search-text").classList.remove("active-search-text");
+    let searchText = document.querySelector("#search-text");
+    let searchBox = document.getElementById("store-search");
+    if (searchBox.value == '') {
+        searchText.classList.remove("active-search-text");
+    }
 }
