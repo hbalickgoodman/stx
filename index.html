@@ -22,8 +22,8 @@
                 <li>Blog</li>
                 <li>Find a Dealer</li>
                 <li>Help</li>
-                <li><img class="user-icon" src="ftx site assets/Icon - User.png" alt="account"></li>
-                <li><img class="cart-icon" src="ftx site assets/Icon - Cart - Active.png" alt="cart"></li>
+                <li class="user-icon"><img src="ftx site assets/Icon - User.png" alt="account"></li>
+                <li class="cart-icon"><img src="ftx site assets/Icon - Cart - Active.png" alt="cart"></li>
             </ul>
         </nav>
         <nav clas="main-nav">
@@ -36,9 +36,10 @@
                 <li>
                     <div class="search-container">
                         <img src="ftx site assets/icon - search.png" alt="Search">
-                        <label for="Store Search">
-                            <input class="search" type="text" placeholder="">
-                        </label>
+                        <label for="store-search" id="search-text">Search </label>
+
+                        <input class="search" type="text" name="store-search" placeholder=""
+                            onclick="shiftSearchText()">
                     </div>
                 </li>
 
