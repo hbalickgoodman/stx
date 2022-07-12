@@ -14,6 +14,7 @@ body {
     --section-max-width: 1800px;
     --red: #E7131A;
     --light-grey: #B4B1AC;
+    --dark-grey: #797671;
 
 }
 
@@ -25,7 +26,9 @@ label {
     font-weight: 500;
     font-style: normal;
     max-width: 65ch;
+    color: black;
 }
+
 
 label {
     line-height: 1.5;
@@ -46,6 +49,7 @@ h2 {
     font-family: solano-gothic-pro-mvb, sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: black;
 }
 
 h3,
@@ -54,6 +58,7 @@ h4 {
     font-weight: 700;
     font-style: normal;
     font-size: 2rem;
+    color: black;
 }
 
 h4 {
@@ -133,10 +138,11 @@ span.outlined {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
     letter-spacing: -.02em;
+    color: black;
 }
 
 span.slash {
-    color: var(--light-grey);
+    color: var(--dark-grey);
     margin-left: .2em;
 }
 
@@ -229,6 +235,21 @@ body {
     background: #FDFDFD;
 }
 
+link,
+alink,
+vlink,
+:link {
+    color: #0000EE;
+}
+
+
+
+text {
+    color: black;
+}
+
+
+
 input {
     background: white;
 }
@@ -315,6 +336,7 @@ input {
     margin-inline: auto;
     max-width: var(--section-max-width);
     width: 100%;
+    background-color: white;
     background-image: url("ftx site assets/Heading-background.png");
     background-position: center;
 }
@@ -526,6 +548,7 @@ span.elite-icons {
 
 .new-text-container h4 {
     margin-block-end: 0;
+    color: white;
 }
 
 .new-text-container::before {
@@ -678,6 +701,7 @@ span.bullet-line::before {
 .right-col {
     grid-area: info;
     margin-top: 100px;
+    color: black;
 }
 
 
@@ -706,14 +730,24 @@ span.bullet-line::before {
 
 
 .container-octagon-two {
-    background-image: linear-gradient(170deg, #949494 0%, #575757 80%);
+    background-color: #5e5e5e;
+    background-image: linear-gradient(170deg, #ababab 0%, #4d4d4d 80%);
     color: #ffffff;
     padding-bottom: 1rem;
     grid-template-areas: "image info";
 }
 
+.container-octagon-two li,
+.container-octagon-two h4 {
+    color: white;
+}
+
 .right-col.octagon-two-con {
     margin-top: 9rem;
+}
+
+.octagon-two-con h3 {
+    color: rgb(228, 228, 228);
 }
 
 .container-octagon-two .pricing {
@@ -773,11 +807,13 @@ img.octagon-two.product-image {
 /*Hardcoding this, wonder if there is a better way...*/
 .new-sku-with-text h3 {
     margin-left: 80px;
+    color: black;
 }
 
 .sku .new-text-container {
     position: relative;
     top: 65px;
+    color: white;
 }
 
 
@@ -813,6 +849,7 @@ img.octagon-two.product-image {
 
 .new-sku-with-text h4 {
     margin-bottom: 20px;
+    color: white;
 }
 
 .new-text-sku {
@@ -1014,6 +1051,7 @@ footer {
     margin: .2rem 1.5rem;
     font-weight: lighter;
     font-size: .9rem;
+    color: white;
 }
 
 .social {
@@ -1026,6 +1064,7 @@ footer {
 
 .social>* {
     margin: 50px 1%;
+    color: white;
 }
 
 .social img {
@@ -1049,7 +1088,7 @@ footer {
 
 
 .pause {
-    margin-top: 10px;
+    margin-top: 13px;
     margin-left: 20px;
     position: relative;
     background-image: linear-gradient(to right, black 0%, black 35%, #6a6a6a00 35%, #6a6a6a00 65%, black 65%, black 100%);
@@ -1060,6 +1099,9 @@ footer {
 }
 
 
+.octagon-two-con>.pause {
+    background-image: linear-gradient(to right, white 0%, white 35%, #6a6a6a00 35%, #6a6a6a00 65%, white 65%, white 100%);
+}
 
 .pause:hover {
     background-image: linear-gradient(to right, var(--red) 0%, var(--red) 35%, #6a6a6a00 35%, #6a6a6a00 65%, var(--red) 65%, var(--red) 100%);
@@ -1074,6 +1116,10 @@ footer {
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     cursor: pointer;
+}
+
+.octagon-two-con>.play {
+    border-left-color: white;
 }
 
 .play:hover {
