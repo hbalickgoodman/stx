@@ -306,7 +306,9 @@ input {
 .inactive-search-text {
     left: 20%;
     top: 10px;
-    color: var(--light-grey);
+    color: #696763;
+    cursor: text;
+    pointer-events: none;
 }
 
 .active-search-text {
