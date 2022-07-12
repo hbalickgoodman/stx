@@ -35,12 +35,13 @@
                 <li><a href="">HOCKEY</a></li>
                 <li>
                     <div class="search-container">
-                        <img src="ftx site assets/icon - search.png" alt="Search">
                         <label for="store-search" class="inactive-search-text" id="search-text"
                             aria-hidden="true">Search </label>
+                        <img src="ftx site assets/icon - search.png" alt="Search">
 
-                        <input class="search" type="text" id="store-search" placeholder="" onclick="shiftSearchText()"
-                            onkeydown="shiftSearchText()">
+
+                        <input class="search" type="text" id="store-search" placeholder="" onfocus="ShiftSearchText()"
+                            onblur="ShiftBack()" onkeydown="ShiftSearchText()">
                     </div>
                 </li>
 

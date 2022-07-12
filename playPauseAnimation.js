@@ -22,8 +22,12 @@ function stopstartanimate() {
 
     }
 }
-
-function shiftSearchText() {
-    document.getElementById("search-text").classList.add("active-search-text");
+const searchText = document.getElementById("search-text");
+function ShiftSearchText() {
+    document.querySelector("#search-text").classList.add("active-search-text");
 }
 
+
+function ShiftBack() {
+    document.querySelector("#search-text").classList.remove("active-search-text");
+}
