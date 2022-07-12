@@ -35,11 +35,13 @@
                 <li><a href="">HOCKEY</a></li>
                 <li>
                     <div class="search-container">
+                        <label for="store-search" class="inactive-search-text" id="search-text"
+                            aria-hidden="true">Search </label>
                         <img src="ftx site assets/icon - search.png" alt="Search">
-                        <label for="store-search" class="inactive-search-text" id="search-text">Search </label>
 
-                        <input class="search" type="text" name="store-search" placeholder=""
-                            onclick="shiftSearchText()" onkeydown="shiftSearchText()">
+
+                        <input class="search" type="text" id="store-search" placeholder="" onfocus="ShiftSearchText()"
+                            onblur="ShiftBack()" onkeydown="ShiftSearchText()">
                     </div>
                 </li>
 
@@ -235,7 +237,11 @@
             <div class="blank-col"></div>
             <div class="right-col octagon-two-con">
                 <div class="pause play-pause-icon" alt="play/pause animations" onclick="stopstartanimate()"
+<<<<<<< HEAD
                     onkeydown="stopstartanimate()" tabindex="0"></div>
+=======
+                    onkeydown="stopstartanimate()" tabindex=0></div>
+>>>>>>> 261831c6555bf96ef92d4733bb8c7dec2ecbbbb6
 
                 <div class="new-text-container">
                     <h4>NEW</h4>

@@ -297,15 +297,18 @@ input {
 }
 
 #search-text {
+    z-index: 0;
     position: absolute;
-    transition: all 300ms ease-in;
+    transition: all 500ms ease-in;
     user-select: none;
 }
 
 .inactive-search-text {
     left: 20%;
     top: 10px;
-    color: var(--light-grey);
+    color: #696763;
+    cursor: text;
+    pointer-events: none;
 }
 
 .active-search-text {
@@ -315,11 +318,15 @@ input {
 }
 
 .search {
+    z-index: 1;
     padding-left: 1.8rem;
     margin-block: auto;
     border-radius: 16px;
+    background: transparent;
     border: #EAEAEA 1px solid;
 }
+
+
 
 .search-container img {
     position: absolute;

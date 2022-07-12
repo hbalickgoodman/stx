@@ -22,8 +22,16 @@ function stopstartanimate() {
 
     }
 }
-
-function shiftSearchText() {
-    document.getElementById("search-text").classList.add("active-search-text");
+const searchText = document.getElementById("search-text");
+function ShiftSearchText() {
+    document.querySelector("#search-text").classList.add("active-search-text");
 }
 
+
+function ShiftBack() {
+    let searchText = document.querySelector("#search-text");
+    let searchBox = document.getElementById("store-search");
+    if (searchBox.value == '') {
+        searchText.classList.remove("active-search-text");
+    }
+}
