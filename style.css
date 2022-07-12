@@ -14,6 +14,7 @@ body {
     --section-max-width: 1800px;
     --red: #E7131A;
     --light-grey: #B4B1AC;
+    --dark-grey: #797671;
 
 }
 
@@ -137,7 +138,7 @@ span.outlined {
 }
 
 span.slash {
-    color: var(--light-grey);
+    color: var(--dark-grey);
     margin-left: .2em;
 }
 
@@ -725,8 +726,8 @@ span.bullet-line::before {
 
 
 .container-octagon-two {
-    background-color: #949494;
-    background-image: linear-gradient(170deg, #949494 0%, #6c6c6c 80%);
+    background-color: #5e5e5e;
+    background-image: linear-gradient(170deg, #ababab 0%, #4d4d4d 80%);
     color: #ffffff;
     padding-bottom: 1rem;
     grid-template-areas: "image info";
@@ -739,6 +740,10 @@ span.bullet-line::before {
 
 .right-col.octagon-two-con {
     margin-top: 9rem;
+}
+
+.octagon-two-con h3 {
+    color: rgb(228, 228, 228);
 }
 
 .container-octagon-two .pricing {
@@ -1077,7 +1082,7 @@ footer {
 
 
 .pause {
-    margin-top: 10px;
+    margin-top: 13px;
     margin-left: 20px;
     position: relative;
     background-image: linear-gradient(to right, black 0%, black 35%, #6a6a6a00 35%, #6a6a6a00 65%, black 65%, black 100%);
