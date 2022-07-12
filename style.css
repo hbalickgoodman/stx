@@ -298,10 +298,20 @@ input {
 
 #search-text {
     position: absolute;
+    transition: all 300ms ease-in;
+    user-select: none;
+}
+
+.inactive-search-text {
     left: 20%;
     top: 10px;
     color: var(--light-grey);
-    user-select: none;
+}
+
+.active-search-text {
+    left: 10%;
+    color: black;
+    top: -12px;
 }
 
 .search {

@@ -23,3 +23,7 @@ function stopstartanimate() {
     }
 }
 
+function shiftSearchText() {
+    document.getElementById("search-text").classList.add("active-search-text");
+}
+
