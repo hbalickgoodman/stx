@@ -969,6 +969,13 @@ input[type=radio] {
     font-weight: 300;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: all 600ms ease;
+}
+
+#formSub:hover {
+    background: white;
+    color: var(--red);
+    border-color: var(--red);
 }
 
 ::placeholder {
@@ -1096,6 +1103,7 @@ footer {
 .social img {
     border-radius: 50%;
     cursor: pointer;
+    transition: all 400ms ease;
 }
 
 .insta-logo:hover {
