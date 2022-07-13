@@ -35,3 +35,10 @@ function ShiftBack() {
         searchText.classList.remove("active-search-text");
     }
 }
+
+$(document).keyup(function (event) {
+    if (event.which === 13) {
+        $("[input[type='radio']:checked+label:after").css("background-color", "yellow");
+        console.log('Enter is pressed!');
+    }
+});
