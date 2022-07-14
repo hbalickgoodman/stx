@@ -267,18 +267,23 @@ input {
     display: flex;
     gap: 2.5%;
     list-style: none;
+    margin-block: 0;
+    padding-block: 10px;
 }
 
 .top-nav-list li {
     cursor: pointer;
 }
 
+.flag-icon {
+    padding-left: 40px;
+
+}
 
 .top-nav-list img {
     cursor: pointer;
     align-self: center;
     width: 21px;
-    padding-left: 40px;
 }
 
 .user-icon {
@@ -296,6 +301,7 @@ input {
     list-style: none;
     text-align: center;
     padding-inline: 2%;
+    margin-block: 0;
 }
 
 .main-nav-list li {
@@ -1293,6 +1299,20 @@ footer {
         flex-wrap: wrap;
         line-height: 0;
 
+    }
+
+    .inactive-search-text {
+        top: -2px;
+    }
+
+    .active-search-text {
+        left: 4%;
+        color: black;
+        top: -25px;
+    }
+
+    .search-container img {
+        top: 2px;
     }
 
     .main-nav-list li {
