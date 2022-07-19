@@ -701,8 +701,7 @@ span.bullet-line::before {
     width: 100%;
 }
 
-.container-octagon,
-.container-two-degree {
+.right-image-layout {
     padding-left: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -711,8 +710,7 @@ span.bullet-line::before {
     z-index: 0;
 }
 
-.container-extreme,
-.container-octagon-two {
+.left-image-layout {
     padding-right: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -721,8 +719,7 @@ span.bullet-line::before {
     z-index: 0;
 }
 
-.octagon,
-.two-degree {
+.right-image {
     margin-left: auto;
 }
 
