@@ -770,8 +770,9 @@ span.bullet-line::before {
     background-image: linear-gradient(170deg, #ababab 0%, #4d4d4d 80%);
     color: #ffffff;
     padding-bottom: 1rem;
-    grid-template-areas: "image info";
 }
+
+
 
 .container-octagon-two li,
 .container-octagon-two h4 {
@@ -795,6 +796,10 @@ img.octagon-two.product-image {
     position: absolute;
     margin-top: -30px;
     z-index: 1;
+}
+
+.right-image {
+    right: 10px;
 }
 
 .inline-pricing-col {
@@ -1207,6 +1212,10 @@ footer {
     .container-extreme .right-col,
     .container-octagon-two .right-col {
         margin-top: 0;
+    }
+
+    .right-image {
+        right: initial;
     }
 
     .container-two-degree .left-col,
