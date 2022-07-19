@@ -719,7 +719,7 @@ span.bullet-line::before {
     z-index: 0;
 }
 
-.right-image {
+.right-image-layout .product-image {
     margin-left: auto;
 }
 
