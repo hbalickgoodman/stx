@@ -699,6 +699,7 @@ span.bullet-line::before {
     margin: 0 auto;
     max-width: var(--section-max-width);
     width: 100%;
+    position: relative;
 }
 
 .right-image-layout {
@@ -799,7 +800,7 @@ img.octagon-two.product-image {
 }
 
 .right-image {
-    right: 10px;
+    right: 0px;
 }
 
 .inline-pricing-col {
