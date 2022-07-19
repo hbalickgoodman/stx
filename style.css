@@ -746,6 +746,7 @@ span.bullet-line::before {
 .call-to-action {
     background-image: linear-gradient(white, transparent);
     overflow-x: hidden;
+    overflow-y: hidden;
     width: 100%;
     padding-block: 4rem;
 }
