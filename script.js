@@ -62,8 +62,7 @@ $(document).ready(function () {
         }
 
     });
-    if ($(".container-octagon-two").hasClass("right-image-layout")) {
-        $(".container-octagon-two").prev().addClass("right-image");
-    }
+
+    $(".final-call-to-action").prepend($("img.target-image"));
 
 });
