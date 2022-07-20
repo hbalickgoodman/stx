@@ -62,13 +62,8 @@ $(document).ready(function () {
         }
 
     });
-
-    $('.sku-buttons button').keypress(function (e) {
-        let k = e.which;
-        if (k == 32) {
-            let f = $(this).prop("background", "blue");
-            console.log("f");
-        }
-    });
+    if ($(".container-octagon-two").hasClass("right-image-layout")) {
+        $(".container-octagon-two").prev().addClass("right-image");
+    }
 
 });
